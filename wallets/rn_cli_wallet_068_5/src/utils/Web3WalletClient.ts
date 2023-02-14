@@ -15,8 +15,8 @@ export async function createWeb3Wallet() {
   core = new Core({
     // @notice: If you want the debugger / logs
     // logger: 'debug',
-    projectId: ENV_PROJECT_ID,
-    relayUrl: ENV_RELAY_URL,
+    projectId: "3cb53bcbd7b02a71f87ee8068e0ee5ad",
+    relayUrl: "wss://relay.walletconnect.com",
   });
 
   const {eip155Addresses} = await createOrRestoreEIP155Wallet();

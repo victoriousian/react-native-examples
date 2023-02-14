@@ -13,8 +13,8 @@ export default function App() {
   async function createClient() {
     try {
       const client = await SignClient.init({
-        projectId: ENV_PROJECT_ID,
-        relayUrl: ENV_RELAY_URL,
+        projectId: "3cb53bcbd7b02a71f87ee8068e0ee5ad",
+        relayUrl: "wss://relay.walletconnect.com",
       });
       setSignClient(client);
       await subscribeToEvents(client);
